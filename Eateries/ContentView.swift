@@ -11,11 +11,12 @@ struct ContentView: View {
     @Binding var eateries: [Eatery]
     var body: some View {
         NavigationView{
-            MasterView(eateries: $eateries)
+            EateryList(eateries: $eateries)
         }
     }
 }
 
+/*
 struct MasterView: View {
     @Binding var eateries: [Eatery]
     var body: some View {
@@ -34,7 +35,7 @@ struct DetailView: View {
         })
     }
 }
-
+*/
 
 /*
 struct ContentView_Previews: PreviewProvider {

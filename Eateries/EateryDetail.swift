@@ -4,7 +4,7 @@
 //
 //  Created by Kieran Murphy on 21/4/21.
 //
-/*
+
 import SwiftUI
 
 struct EateryDetail: View {
@@ -91,4 +91,4 @@ struct EateryDetail_Previews: PreviewProvider {
         }
     }
 }
-*/
+

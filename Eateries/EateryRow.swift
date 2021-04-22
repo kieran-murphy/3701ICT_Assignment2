@@ -4,11 +4,12 @@
 //
 //  Created by Kieran Murphy on 21/4/21.
 //
-/*
+
 import SwiftUI
 
 struct EateryRow: View {
-    var eatery: Eatery
+    //var eatery: Eatery
+    @Binding var eatery: Eatery
     
     var body: some View {
             HStack {
@@ -27,7 +28,22 @@ struct EateryRow: View {
     }
 }
 
+
+
+
 /*
+ 
+ struct DetailView: View {
+     @Binding var eatery: Eatery
+     var body: some View {
+         TextField("Enter person name", text: $eatery.name, onCommit: {
+             EateriesApp.save()
+         })
+     }
+ }
+ 
+ 
+ 
  struct EateryRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
@@ -38,4 +54,5 @@ struct EateryRow: View {
     }
 }
 */
-*/
+
+
