@@ -1,23 +1,23 @@
 //
-//  FoodRow.swift
+//  EateryRow.swift
 //  Eateries
 //
 //  Created by Kieran Murphy on 21/4/21.
 //
-
+/*
 import SwiftUI
 
-struct FoodRow: View {
-    var food: Food
+struct EateryRow: View {
+    var eatery: Eatery
     
     var body: some View {
             HStack {
-                imageDownload(food.url)
+                imageDownload(eatery.url)
                     .resizable()
                     .frame(width: 50, height: 50)
                 VStack(alignment: .leading) {
-                    Text(food.name)
-                    Text(food.desc)
+                    Text(eatery.name)
+                    Text(eatery.desc)
                     .italic()
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.leading)
@@ -28,13 +28,14 @@ struct FoodRow: View {
 }
 
 /*
- struct FoodRow_Previews: PreviewProvider {
+ struct EateryRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-                    FoodRow(food: cottonCandy)
-                    FoodRow(food: cupcake)
+                    EateryRow(food: cottonCandy)
+                    EateryRow(food: cupcake)
                 }
                 .previewLayout(.fixed(width: 300, height: 70))
     }
 }
+*/
 */

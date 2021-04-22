@@ -7,7 +7,7 @@
 
 import SwiftUI
 /// 🍔 An edible form of energy for humans
-struct Food: Hashable {
+struct Eatery: Hashable, Codable {
     ///The name of the food item
     var name: String
     ///The reference image of the food item

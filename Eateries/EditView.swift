@@ -4,29 +4,30 @@
 //
 //  Created by Kieran Murphy on 21/4/21.
 //
-
+/*
 import SwiftUI
 
 struct EditView: View {
     
-    @Binding var food: Food
+    @Binding var eatery: Eatery
     var body: some View {
         
         List {
             Section(header: Text("Name")) {
-                TextField("Name", text: $food.name)
+                TextField("Name", text: $eatery.name)
             }
             Section(header: Text("Image")) {
-                TextField("Image", text: $food.url)
+                TextField("Image", text: $eatery.url)
             }
             Section(header: Text("Desc")) {
-                TextField("Desc", text: $food.desc)
+                TextField("Desc", text: $eatery.desc)
             }
             Section(header: Text("Story")) {
-                TextField("Story", text: $food.story)
+                TextField("Story", text: $eatery.story)
             }
             
         }.listStyle(InsetGroupedListStyle())
     }
 }
 
+*/

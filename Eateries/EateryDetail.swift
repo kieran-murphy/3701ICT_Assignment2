@@ -1,39 +1,39 @@
 //
-//  FoodDetail.swift
+//  EateryDetail.swift
 //  Eateries
 //
 //  Created by Kieran Murphy on 21/4/21.
 //
-
+/*
 import SwiftUI
 
-struct FoodDetail: View {
-    @State var food: Food
+struct EateryDetail: View {
+    @State var eatery: Eatery
     @State private var isPresented = false
     var body: some View {
         
             VStack {
-                imageDownload(food.url)
+                imageDownload(eatery.url)
                     .resizable()
-                    .frame(width: 300.0,height:300.0)
+                    .frame(width: 360.0,height:270.0)
                     .aspectRatio(contentMode: .fill)
                     .shadow(radius: 6)
                     .padding(.bottom)
             ScrollView {
                 VStack(alignment: .leading) {
-                Text(food.name)
+                Text(eatery.name)
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(.leading)
                     .multilineTextAlignment(.leading)
                 
                     
-                Text(food.desc)
+                Text(eatery.desc)
                     .italic()
                     .fontWeight(.ultraLight)
                     .padding(.horizontal)
                     .multilineTextAlignment(.leading)
-                Text(food.story)
+                Text(eatery.story)
                     .padding(.horizontal)
                     .padding(.top)
                 
@@ -41,7 +41,7 @@ struct FoodDetail: View {
                     .bold()
                     .padding(.horizontal)
                     .padding(.vertical)
-                    ForEach(food.ingredients, id: \.self) { ingredient in
+                    ForEach(eatery.ingredients, id: \.self) { ingredient in
                         Text(ingredient)
                         Divider()
                     }.padding(.horizontal)
@@ -49,7 +49,7 @@ struct FoodDetail: View {
                     .bold()
                     .padding(.horizontal)
                     .padding(.vertical)
-                    ForEach(food.recipe, id: \.self) { step in
+                    ForEach(eatery.recipe, id: \.self) { step in
                         Text(step)
                         Divider()
                     }.padding(.horizontal)
@@ -70,7 +70,7 @@ struct FoodDetail: View {
             
             .fullScreenCover(isPresented: $isPresented) {
                 NavigationView {
-                    EditView(food: $food)
+                    EditView(eatery: $eatery)
                         .navigationTitle("Edit")
                         .navigationBarItems(leading: Button("Cancel") {
                             isPresented = false
@@ -83,11 +83,12 @@ struct FoodDetail: View {
     
 }
 
-struct FoodDetail_Previews: PreviewProvider {
+struct EateryDetail_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            FoodDetail(food: cottonCandy)
+            EateryDetail(eatery: cottonCandy)
             
         }
     }
 }
+*/
