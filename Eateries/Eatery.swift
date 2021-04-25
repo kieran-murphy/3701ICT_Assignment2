@@ -17,9 +17,7 @@ struct Eatery: Hashable, Codable {
     ///A short personal story about the food item
     var story: String
     ///Instructions on how to create the food item
-    var recipe: [String] = []
-    ///A list of things required to create the food item
-    var ingredients: [String] = []
+    var reviews: [String] = []
     ///A URL that points to where the image is stored on the internet
     var url: String = ""
     ///A  function that runs the imageDownload function if the URL is valid, else returns the placeholder image

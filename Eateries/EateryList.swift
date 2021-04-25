@@ -57,7 +57,7 @@ struct EateryList: View {
         eateries.move(fromOffsets: indicies, toOffset: newOffset)
     }
     func add() {
-        eateries.append(Eatery(name: "Eatery", desc: "Insert description here", story: "Insert story here", recipe: ["Insert recipe here"], ingredients: ["Insert ingredients here"], url: "https://i.imgur.com/y3MMnba.png"))
+        eateries.append(Eatery(name: "Eatery", desc: "Insert description here", story: "Insert story here", reviews: ["Insert reviews here"], url: "https://i.imgur.com/y3MMnba.png"))
     }
 }
 /*

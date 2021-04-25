@@ -37,20 +37,12 @@ struct EateryDetail: View {
                     .padding(.horizontal)
                     .padding(.top)
                 
-                Text("Ingredients")
+                Text("Reviews")
                     .bold()
                     .padding(.horizontal)
                     .padding(.vertical)
-                    ForEach(eatery.ingredients, id: \.self) { ingredient in
-                        Text(ingredient)
-                        Divider()
-                    }.padding(.horizontal)
-                Text("Recipe")
-                    .bold()
-                    .padding(.horizontal)
-                    .padding(.vertical)
-                    ForEach(eatery.recipe, id: \.self) { step in
-                        Text(step)
+                    ForEach(eatery.reviews, id: \.self) { review in
+                        Text(review)
                         Divider()
                     }.padding(.horizontal)
                 
