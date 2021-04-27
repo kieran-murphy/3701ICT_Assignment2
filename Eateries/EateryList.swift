@@ -20,7 +20,7 @@ struct EateryList: View {
                            }
                         } */
                         List(0..<eateries.count) { i in
-                            NavigationLink(destination: EateryDetail(eatery: eateries[i])) {
+                            NavigationLink(destination: EateryDetail(eatery: $eateries[i])) {
                                 EateryRow(eatery: $eateries[i])
                         }
                         //.onDelete(perform: delete)

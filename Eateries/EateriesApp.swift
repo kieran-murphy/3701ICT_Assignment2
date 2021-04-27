@@ -35,9 +35,10 @@ struct EateriesApp: App {
         guard let documentDir = fm.urls(for: .documentDirectory, in:
                                             .userDomainMask).first else { return URL(fileURLWithPath: "/") }
         let fileURL = documentDir.appendingPathComponent(fileName)
+        print(fileURL)
         return fileURL
     }
-    
+//print(EateriesApp.fileURL)
     
     static func save() {
         do {

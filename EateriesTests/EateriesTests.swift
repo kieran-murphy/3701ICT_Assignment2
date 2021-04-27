@@ -18,16 +18,21 @@ class EateriesTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+    func testEateryGetters() {
+                let name = "Cotton Candy"
+                let image = "cottonCandy"
+                let desc = "A mixture of sugar and happiness"
+                let story = "My dentist hates me for eating this. Sorry, dentist."
+                let reviews = ["Step 1", "Step 2", "Step 3"]
+               
+                let food = Food(name: name, image: image, desc: desc, story: story, recipe: recipe, ingredients: ingredients)
+                
+                XCTAssertEqual(food.image, image)
+                XCTAssertEqual(food.name, name)
+                XCTAssertEqual(food.desc, desc)
+                XCTAssertEqual(food.story, story)
+                XCTAssertEqual(food.recipe, recipe)
+                XCTAssertEqual(food.ingredients, ingredients)
+            }
 
 }

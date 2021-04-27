@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EateryDetail: View {
-    @State var eatery: Eatery
+    @Binding var eatery: Eatery
     @State private var isPresented = false
     var body: some View {
         
@@ -68,13 +68,14 @@ struct EateryDetail: View {
                             isPresented = false
                         }, trailing: Button("Done") {
                             isPresented = false
+                            EateriesApp.save()
                         })
                 }
             }
     }
     
 }
-
+/*
 struct EateryDetail_Previews: PreviewProvider {
     static var previews: some View {
         Group {
@@ -83,4 +84,4 @@ struct EateryDetail_Previews: PreviewProvider {
         }
     }
 }
-
+*/
