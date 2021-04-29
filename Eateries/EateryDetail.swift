@@ -28,12 +28,12 @@ struct EateryDetail: View {
                     .multilineTextAlignment(.leading)
                 
                     
-                Text(eatery.desc)
+                Text(eatery.location)
                     .italic()
                     .fontWeight(.ultraLight)
                     .padding(.horizontal)
                     .multilineTextAlignment(.leading)
-                Text(eatery.story)
+                Text(eatery.notes)
                     .padding(.horizontal)
                     .padding(.top)
                 

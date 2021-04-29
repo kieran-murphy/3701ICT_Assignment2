@@ -18,7 +18,7 @@ struct EateryRow: View {
                     .frame(width: 50, height: 50)
                 VStack(alignment: .leading) {
                     Text(eatery.name)
-                    Text(eatery.desc)
+                    Text(eatery.location)
                     .italic()
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.leading)

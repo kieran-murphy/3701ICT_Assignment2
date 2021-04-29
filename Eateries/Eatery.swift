@@ -5,23 +5,20 @@
 //  Created by Kieran Murphy on 21/4/21.
 //
 
-import SwiftUI
-/// 🍔 An edible form of energy for humans
 struct Eatery: Hashable, Codable {
     ///The name of the food item
     var name: String
     ///The reference image of the food item
     //var image: String
     ///A short description of the food item
-    var desc: String
+    var location: String
     ///A short personal story about the food item
-    var story: String
+    var notes: String
     ///Instructions on how to create the food item
     var reviews: [String] = []
     ///A URL that points to where the image is stored on the internet
     var url: String = ""
     ///A  function that runs the imageDownload function if the URL is valid, else returns the placeholder image
-    ///this is a change here
     
     
     

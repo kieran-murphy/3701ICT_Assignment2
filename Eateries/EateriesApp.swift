@@ -14,7 +14,7 @@ struct EateriesApp: App {
     static var model: [Eatery] = {
         guard let data = try? Data(contentsOf: EateriesApp.fileURL),
               let model = try? JSONDecoder().decode([Eatery].self, from: data) else {
-        return [cottonCandy, cupcake, donut, macaroon, popsicle, rainbowCake]
+        return [elCaminoCantina, theFineDine, nightBites, theRiverRodeo, theCozyKitchen, theElegantEatery]
         }
         return model
     }()

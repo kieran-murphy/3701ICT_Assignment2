@@ -19,11 +19,11 @@ struct EditView: View {
             Section(header: Text("Image")) {
                 TextField("Image", text: $eatery.url)
             }
-            Section(header: Text("Desc")) {
-                TextField("Desc", text: $eatery.desc)
+            Section(header: Text("Location")) {
+                TextField("Location", text: $eatery.location)
             }
-            Section(header: Text("Story")) {
-                TextField("Story", text: $eatery.story)
+            Section(header: Text("Notes")) {
+                TextField("Notes", text: $eatery.notes)
             }
             
         }.listStyle(InsetGroupedListStyle())
