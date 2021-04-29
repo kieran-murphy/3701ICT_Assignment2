@@ -19,20 +19,19 @@ class EateriesTests: XCTestCase {
     }
 
     func testEateryGetters() {
-                let name = "Cotton Candy"
-                let image = "cottonCandy"
-                let desc = "A mixture of sugar and happiness"
-                let story = "My dentist hates me for eating this. Sorry, dentist."
-                let reviews = ["Step 1", "Step 2", "Step 3"]
-               
-                let food = Food(name: name, image: image, desc: desc, story: story, recipe: recipe, ingredients: ingredients)
-                
-                XCTAssertEqual(food.image, image)
-                XCTAssertEqual(food.name, name)
-                XCTAssertEqual(food.desc, desc)
-                XCTAssertEqual(food.story, story)
-                XCTAssertEqual(food.recipe, recipe)
-                XCTAssertEqual(food.ingredients, ingredients)
-            }
+            let name = "El Camino Cantina"
+            let location = "Mexico City"
+            let notes = "They make tacos and they give you free sombreros"
+            let reviews = ["Review 1", "Review 2", "Review 3"]
+            let url = "https://www.visitbrisbane.com.au/~/media/articles/2020/november/elcaminocantina_20201125_wide.ashx"
+           
+            let eatery = Eatery(name: name, location: location, notes: notes, reviews: reviews, url: url)
+            
+            XCTAssertEqual(eatery.name, name)
+            XCTAssertEqual(eatery.location, location)
+            XCTAssertEqual(eatery.notes, notes)
+            XCTAssertEqual(eatery.reviews, reviews)
+            XCTAssertEqual(eatery.url, url)
 
+}
 }

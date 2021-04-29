@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA0C8FB3263AB0170036D937 /* EateriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA64DEF262FE5AB0064E419 /* EateriesApp.swift */; };
+		CA0C8FB7263AB01C0036D937 /* EateriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA64DEF262FE5AB0064E419 /* EateriesApp.swift */; };
+		CA0C8FBB263AB0460036D937 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA64DF1262FE5AB0064E419 /* ContentView.swift */; };
+		CA0C8FBF263AB04B0036D937 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA64DF1262FE5AB0064E419 /* ContentView.swift */; };
 		CA183FE8262FE8BC0085E7DB /* EateryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA183FE7262FE8BC0085E7DB /* EateryList.swift */; };
 		CA183FE9262FE8BC0085E7DB /* EateryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA183FE7262FE8BC0085E7DB /* EateryList.swift */; };
 		CA183FEA262FE8BC0085E7DB /* EateryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA183FE7262FE8BC0085E7DB /* EateryList.swift */; };
@@ -310,6 +314,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA0C8FBB263AB0460036D937 /* ContentView.swift in Sources */,
+				CA0C8FB7263AB01C0036D937 /* EateriesApp.swift in Sources */,
 				CA184013262FE9D10085E7DB /* EateryRow.swift in Sources */,
 				CAA64E02262FE5AF0064E419 /* EateriesTests.swift in Sources */,
 				CA183FFE262FE9500085E7DB /* EditView.swift in Sources */,
@@ -325,6 +331,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA0C8FBF263AB04B0036D937 /* ContentView.swift in Sources */,
+				CA0C8FB3263AB0170036D937 /* EateriesApp.swift in Sources */,
 				CA184014262FE9D10085E7DB /* EateryRow.swift in Sources */,
 				CAA64E0D262FE5AF0064E419 /* EateriesUITests.swift in Sources */,
 				CA183FFF262FE9500085E7DB /* EditView.swift in Sources */,
