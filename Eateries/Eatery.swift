@@ -21,6 +21,7 @@ struct Eatery: Hashable, Codable {
     ///A URL that points to where the image is stored on the internet
     var url: String = ""
     ///A  function that runs the imageDownload function if the URL is valid, else returns the placeholder image
+    ///this is a change here
     
     
     
