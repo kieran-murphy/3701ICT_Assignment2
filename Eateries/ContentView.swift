@@ -10,10 +10,13 @@ import SwiftUI
 struct ContentView: View {
     @Binding var eateries: [Eatery]
     var body: some View {
-        NavigationView{
+       
             EateryList(eateries: $eateries)
-        }
+        
+        
     }
+    
+    
 }
 
 /*
@@ -47,12 +50,12 @@ struct ContentView_Previews: PreviewProvider {
  }))
     }
 }
-*/
 
-/*
+
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(eateries: [Eatery])
     }
-}
-*/
+} */
+

@@ -26,8 +26,6 @@ struct EateryDetail: View {
                     .fontWeight(.bold)
                     .padding(.leading)
                     .multilineTextAlignment(.leading)
-                
-                    
                 Text(eatery.location)
                     .italic()
                     .fontWeight(.ultraLight)
@@ -36,7 +34,6 @@ struct EateryDetail: View {
                 Text(eatery.notes)
                     .padding(.horizontal)
                     .padding(.top)
-                
                 Text("Reviews")
                     .bold()
                     .padding(.horizontal)
@@ -45,11 +42,7 @@ struct EateryDetail: View {
                         Text(review)
                         Divider()
                     }.padding(.horizontal)
-                
-                
-                    
                 }.frame(maxWidth: .infinity)
-            
         }.frame(minWidth: 0,
                 maxWidth: .infinity,
                 maxHeight: .infinity,
