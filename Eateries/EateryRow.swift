@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct EateryRow: View {
-    //var eatery: Eatery
     @Binding var eatery: Eatery
     
     var body: some View {

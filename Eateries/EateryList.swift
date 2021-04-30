@@ -36,12 +36,15 @@ struct EateryList: View {
     }
     func delete(indexSet: IndexSet) {
             eateries.remove(atOffsets: indexSet)
+            EateriesApp.save()
             }
     func move(indicies: IndexSet, newOffset: Int) {
         eateries.move(fromOffsets: indicies, toOffset: newOffset)
+        EateriesApp.save()
     }
     func add() {
         eateries.append(Eatery(name: "Eatery", location: "Insert location here", notes: "Insert notes here", reviews: ["Insert reviews here"], url: "https://i.imgur.com/y3MMnba.png"))
+        EateriesApp.save()
     }
 }
 
