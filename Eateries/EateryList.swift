@@ -13,13 +13,18 @@ struct EateryList: View {
         NavigationView {
             VStack {
                 List {
-                    ForEach(eateries.indices, id: \.self) { i in
-                            NavigationLink(destination: EateryDetail(eatery: $eateries[i])) {
-                               EateryRow(eatery: $eateries[i])
-                           }
+                    ForEach(eateries) {
+                        //NavigationLink(destination: EateryDetail(eatery: $eateries[identifiedBy: $0])) {
+                               EateryRow(eatery: $eateries[identifiedBy: $0])
+                           
                         }
-                    .onDelete(perform: delete)
-                    .onMove(perform: move)
+                    .onMove {
+                        eateries.move(fromOffsets: $0, toOffset: $1)
+                        EateriesApp.save()
+                    }.onDelete {
+                        eateries.remove(atOffsets: $0)
+                        EateriesApp.save()
+                    }
                 }
                 
                 .navigationTitle("Favourite Eateries")
@@ -34,14 +39,7 @@ struct EateryList: View {
         }
         
     }
-    func delete(indexSet: IndexSet) {
-            eateries.remove(atOffsets: indexSet)
-            EateriesApp.save()
-            }
-    func move(indicies: IndexSet, newOffset: Int) {
-        eateries.move(fromOffsets: indicies, toOffset: newOffset)
-        EateriesApp.save()
-    }
+    
     func add() {
         eateries.append(Eatery(name: "Eatery", location: "Insert location here", notes: "Insert notes here", reviews: ["Insert reviews here"], url: "https://i.imgur.com/y3MMnba.png"))
         EateriesApp.save()

@@ -11,6 +11,7 @@ import SwiftUI
 
 @main
 struct EateriesApp: App {
+    @State var model: [Eatery] = EateriesApp.model
     static var model: [Eatery] = {
         guard let data = try? Data(contentsOf: EateriesApp.fileURL),
               let model = try? JSONDecoder().decode([Eatery].self, from: data) else {
@@ -18,14 +19,12 @@ struct EateriesApp: App {
         }
         return model
     }()
+    static var modelBinding: Binding<[Eatery]>?
 
     var body: some Scene {
-        WindowGroup {
-            ContentView(eateries: Binding(get: {
-                EateriesApp.model
-            }, set: { newValue in
-                EateriesApp.model = newValue
-            }))
+        EateriesApp.modelBinding = $model
+        return WindowGroup {
+            ContentView(eateries: $model)
         }
     }
     
