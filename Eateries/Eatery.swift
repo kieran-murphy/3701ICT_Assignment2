@@ -5,7 +5,6 @@
 //  Created by Kieran Murphy on 21/4/21.
 //
 import Foundation
-
 ///🍽 A place where humans can exchange their currency for food
 struct Eatery: Codable, Identifiable {
     ///The identification number for the eatery
