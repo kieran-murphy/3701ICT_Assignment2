@@ -41,7 +41,7 @@ struct EateriesApp: App {
     
     static func save() {
         do {
-            let data = try JSONEncoder().encode(model)
+            let data = try JSONEncoder().encode(modelBinding?.wrappedValue ?? model)
             
             try data.write(to: fileURL, options: .atomic)
             guard let dataString = String(data: data, encoding: .utf8) else {

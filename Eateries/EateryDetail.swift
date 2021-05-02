@@ -15,7 +15,7 @@ struct EateryDetail: View {
             VStack {
                 imageDownload(eatery.url)
                     .resizable()
-                    .frame(width: 360.0,height:270.0)
+                    .frame(width: 340.0,height:280.0)
                     .aspectRatio(contentMode: .fill)
                     .shadow(radius: 6)
                     .padding(.bottom)

@@ -14,12 +14,11 @@ struct EateryList: View {
             VStack {
                 List {
                     ForEach(eateries) {
-                        let eaterie = $0 //<--- Here
-                        NavigationLink(destination: EateryDetail(eatery: $eateries[identifiedBy: eaterie])) { //<--- Here
-                            EateryRow(eatery: $eateries[identifiedBy: eaterie]) //<--- Here
+                            let eatery = $0
+                            NavigationLink(destination: EateryDetail(eatery: $eateries[identifiedBy: eatery])) {
+                                EateryRow(eatery: $eateries[identifiedBy: eatery])
+                            }
                         }
-                    }
-                    
                     .onMove {
                         eateries.move(fromOffsets: $0, toOffset: $1)
                         EateriesApp.save()
@@ -28,7 +27,6 @@ struct EateryList: View {
                         EateriesApp.save()
                     }
                 }
-                
                 .navigationTitle("Favourite Eateries")
                 .navigationBarItems(leading: EditButton(), trailing: Button( action: add)
                 {
