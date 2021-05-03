@@ -13,13 +13,13 @@ struct EateryDetail: View {
     var body: some View {
         
             VStack {
+                ScrollView {
                 imageDownload(eatery.url)
                     .resizable()
                     .frame(width: 340.0,height:280.0)
                     .aspectRatio(contentMode: .fill)
                     .shadow(radius: 6)
                     .padding(.bottom)
-            ScrollView {
                 VStack(alignment: .leading) {
                 Text(eatery.name)
                     .font(.largeTitle)

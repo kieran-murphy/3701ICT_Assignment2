@@ -23,6 +23,7 @@ func imageDownload (_ input: String) -> Image {
         print ("Cannot convert Data into an image")
         return (Image("Placeholder"))
     }
+    
     let downloadedImage = Image(uiImage: uiImage)
     return downloadedImage
 }
