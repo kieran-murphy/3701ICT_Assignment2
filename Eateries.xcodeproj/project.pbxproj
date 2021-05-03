@@ -32,6 +32,8 @@
 		CA184012262FE9D10085E7DB /* EateryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA184011262FE9D10085E7DB /* EateryRow.swift */; };
 		CA184013262FE9D10085E7DB /* EateryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA184011262FE9D10085E7DB /* EateryRow.swift */; };
 		CA184014262FE9D10085E7DB /* EateryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA184011262FE9D10085E7DB /* EateryRow.swift */; };
+		CA2A02EA263F966100552AA3 /* Binding+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA690848263BA57500BD2051 /* Binding+Identifiable.swift */; };
+		CA2A02EE263F96CF00552AA3 /* Binding+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA690848263BA57500BD2051 /* Binding+Identifiable.swift */; };
 		CA690849263BA57500BD2051 /* Binding+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA690848263BA57500BD2051 /* Binding+Identifiable.swift */; };
 		CAA64DF0262FE5AB0064E419 /* EateriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA64DEF262FE5AB0064E419 /* EateriesApp.swift */; };
 		CAA64DF2262FE5AB0064E419 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA64DF1262FE5AB0064E419 /* ContentView.swift */; };
@@ -318,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2A02EA263F966100552AA3 /* Binding+Identifiable.swift in Sources */,
 				CA0C8FBB263AB0460036D937 /* ContentView.swift in Sources */,
 				CA0C8FB7263AB01C0036D937 /* EateriesApp.swift in Sources */,
 				CA184013262FE9D10085E7DB /* EateryRow.swift in Sources */,
@@ -335,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2A02EE263F96CF00552AA3 /* Binding+Identifiable.swift in Sources */,
 				CA0C8FBF263AB04B0036D937 /* ContentView.swift in Sources */,
 				CA0C8FB3263AB0170036D937 /* EateriesApp.swift in Sources */,
 				CA184014262FE9D10085E7DB /* EateryRow.swift in Sources */,
